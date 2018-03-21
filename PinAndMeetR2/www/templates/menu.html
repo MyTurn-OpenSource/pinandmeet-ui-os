@@ -1,0 +1,54 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content drag-content="false">
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+
+        <ion-nav-buttons side="right">
+            <!--<div style="padding-top:5px; padding-right:8px">
+                <button class="button button-clear" ng-click="openInfoWindow()" style="margin:0; padding:0">
+                    <img src="images/info4.png" style="height:24px;">
+                </button>
+            </div>-->
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-stable">
+      <h1 class="title">Menu</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close ng-click="myProfile()">
+              My profile
+          </ion-item>
+        <ion-item id="modifyAccount" style="display:none" menu-close ng-click="modifyAccount()">
+            My account
+        </ion-item>
+        <ion-item menu-close ng-click="help()">
+            View help
+        </ion-item>    
+        <ion-item menu-close ng-click="about()">
+            About Pin'n'Meet
+        </ion-item>       
+        <ion-item menu-close ng-click="signOut()">
+          Sign out
+        </ion-item>
+ 
+          <!--<div class="item item-divider">
+            Administrator
+        </div>
+        <ion-item menu-close ng-click="pushAlert()">
+          Push Alert
+        </ion-item>-->
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

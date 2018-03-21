@@ -1,0 +1,53 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.nsd.pinandmeet"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.nsd.pinandmeet"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.nsd.pinandmeet"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.nsd.pinandmeet"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.nsd.pinandmeet"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.nsd.pinandmeet"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.nsd.pinandmeet"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.nsd.pinandmeet"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.nsd.pinandmeet"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.nsd.pinandmeet"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.nsd.pinandmeet"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "1065509075650",
+            "PACKAGE_NAME": "com.nsd.pinandmeet"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.nsd.pinandmeet"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<ion-view view-title="My profile">
+    <ion-nav-bar>
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content class="background padding">
+            <div class="card" style="">
+                <div class="item item-text-wrap" >
+                    <div class="list">
+                        <div class="item item-thumbnail-left">
+                            <img src="{{imageUrl}}">
+                            <div><button class="button button-clear button-positive button-small" ng-click="changeProfileImage()">Change profile picture</button></div>
+                        </div>
+                        <div class="item item-avatar" ng-repeat="item in reviews">
+                            <img src="{{item.FromImageUrl}}">
+                            <div style="font-size:10px; float:right">{{item.CreatedDate}}</div>
+                            <div style="font-size:10px; ">{{item.FromName}}</div>
+                            <div>{{item.Evaluation}}</div>
+                        </div>
+                        <div id="noReviews" style="display:none; margin-top:20px">
+                            <h2>No reviews received</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </ion-content>
+</ion-view>

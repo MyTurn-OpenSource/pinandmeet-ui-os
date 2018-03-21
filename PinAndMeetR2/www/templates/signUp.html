@@ -1,0 +1,52 @@
+﻿<ion-view view-title="New account">
+    <ion-nav-bar>
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content class="background padding" >
+        <ion-scroll style="height:800px;">
+            <div class="card">
+                <div class="item item-text-wrap" style="">
+                    <form name="myForm" novalidate>
+                        <div class="list">
+                            <label class="item item-input">
+                                <span class="input-label">First name</span>
+                                <input type="text" id="signup-firstName" name="firstName" ng-model="firstName" class="form-control input1" ng-required="true" placeholder="Required">
+                            </label>
+                            <label class="item item-input">
+                                <span class="input-label">Last name</span>
+                                <input type="text" id="signup-lastName" name="lastName" ng-model="lastName" class="form-control input1" ng-required="true" placeholder="Required">
+                            </label>
+                            <label class="item item-input">
+                                <span class="input-label">Email</span>
+                                <input type="email" id="signup-email" name="email" class="form-control input1" ng-required="true" ng-model="email"
+                                       placeholder="Required" ng-class="{'item-error' : myForm.email.$error.email }">
+                            </label>
+
+                            <label class="item item-input">
+                                <span class="input-label">Birthdate (optional)</span>
+                                <input type="date" ng-model="birthday" id="signup-birthday" class="form-control input1" placeholder="Required" ng-required="true" value="1990-01-01">
+                            </label>
+
+                            <label class="item item-input">
+                                <span class="input-label">Password</span>
+                                <input type="password" id="signup-password" name="password" class="form-control input1" ng-required="true" ng-model="password" ng-minlength="6"
+                                       placeholder="Required" ng-class="{'item-error' : myForm.password.$error.minlength }">
+                            </label>
+                            <div style="margin-bottom:25px">
+
+                            </div>
+                            <button type="submit" class="button button-block button-positive" ng-click="createAccount()"
+                                    ng-disabled="myForm.firstName.$invalid || myForm.lastName.$invalid || myForm.email.$invalid || myForm.birthday.$invalid || myForm.password.$invalid">
+                                Sign Up
+                            </button>
+
+                            <p style="text-align:center; font-size:10px">You must be at least 18 years old to create an account.<br />By clicking Sign Up you agree to the <a href="#" data-tap-disabled="true" style="text-decoration:none; color:blue" onclick="window.open('http://pinandmeet.com/terms.html', '_system');">terms of use (EULA).</a></p>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </ion-scroll>
+    </ion-content>
+</ion-view>

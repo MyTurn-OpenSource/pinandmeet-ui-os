@@ -1,0 +1,52 @@
+﻿<ion-view view-title="Events">
+    <ion-content class="">
+        <div id="map-canvas2" style="height:50%;" data-tap-disabled="true"></div>
+        <ion-scroll style="height: 50%; border-top: 1px solid darkgrey">
+            <div id="some-found" style="padding: 2px 10px; color:grey; font-size:12px; width:100%; text-align:center;display:none">Events today on selected map area</div>
+            <div id="none-found" style="padding: 2px 10px; color:grey; font-size:12px; width:100%; text-align:center;display:none">
+                <br />
+                No events found on selected map area.
+                <br />
+                <br />
+                Zoom and pan the map to get more results.
+                <br />
+                <br />
+                Note that not all the cities are yet included in Pin'n'Meet. To request a new city to be added, send a request on pinandmeet.com
+            </div>
+            <ion-list>
+                <ion-item ng-model="venueList" ng-repeat="item in listItems" ng-click="getMapListDetails(item)" style="padding:5px 10px 0 10px; height:45px " ng-class="{'selectedItem' : selectedListItemId == item.eventId}">
+                    <div style="float: left"><img src="{{item.image}}" /></div>
+                    <div style="float: right; margin-top: 7px; font-size:11px"> {{item.eventStarttimeLocal}}</div>
+                    <div style="margin-left:45px;margin-top: 7px; width:75%; font-size:12px; overflow:hidden; white-space: nowrap; text-overflow: ellipsis;">{{item.eventName}}</div>
+                </ion-item>
+            </ion-list>
+        </ion-scroll>
+    </ion-content>
+</ion-view>
+
+
+<!--<ion-view view-title="Events">
+    <ion-content class="">
+        <ion-scroll style="height: 100%; border-top: 1px solid darkgrey">
+            <ion-list>
+                <ion-item ng-model="venueList" ng-repeat="item in listItems" ng-click="getMapListDetails(item)" style="padding:5px 10px 0 10px; height:45px ">
+                    <div style="float: left"><img src="http://pinandmeet.com/images/facebook_bg_32.png" /></div>
+                    <div style="float: right; margin-top: 7px; font-size:12px"> {{item.eventStarttimeLocal}}</div>
+                    <div style="margin-left:45px;margin-right:35px; margin-top: 7px; margin-right: 5px; ">{{item.eventName}}</div>
+                </ion-item>
+            </ion-list>
+            <div id="some-found" style="padding: 2px 10px; color:grey; font-size:12px; width:100%; text-align:center;">
+                Events on selected map area
+            </div>
+            <div id="none-found" style="padding: 2px 10px; color:grey; font-size:12px; width:100%; text-align:center; display:none">
+                No events found on selected map area.
+                <br/>
+                <br/>
+                Zoom and pan the map to get more results.
+                <br />
+                <br />
+                Note that not all the cities are yet included in Pin'n'Meet. To request a new city to be added, send a request on pinandmeet.com
+            </div>
+        </ion-scroll>
+    </ion-content>
+</ion-view>-->

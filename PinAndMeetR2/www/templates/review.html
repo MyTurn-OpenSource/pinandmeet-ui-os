@@ -1,0 +1,79 @@
+﻿<ion-view view-title="Review">
+    <ion-content class="background padding" >
+        <div class="card" style="margin-bottom:250px">
+            <div class="item item-divider">
+                Enter a review of
+            </div>
+            <div class="item item-text-wrap">
+                <div class="list">
+
+                    <div class="item item-thumbnail-left">
+                        <img src="{{imageUrl}}">
+                        <h2>{{name}}</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item item-divider">
+                Review
+            </div>
+            <ul class="list" style="margin-bottom:0; padding-bottom:0">
+                <li class="item ">
+                    <textarea id="evaluation" style="width:100%; height: 80px; border:none; padding:0; margin:0" placeholder="Write here" data-tap-disabled="true"></textarea>
+                </li>
+                <li class="item item-toggle" style="">
+                    Overall experience
+                    <label class="toggle toggle-assertive" >
+                        <ionic-ratings style="" ratingsobj='ratingsObject' data-tap-disabled="true">
+
+                    </label>
+                </li>
+                <li class="item item-toggle">
+                    Block this user
+                    <label class="toggle toggle-positive">
+                        <input type="checkbox" id="blockUser" />
+                        <div class="track">
+                            <div class="handle"></div>
+                        </div>
+                    </label>
+                </li>
+                <li class="item" style="width:100%; margin-bottom:0; padding-bottom:0">
+                    <div class="button-bar" style="width:100%; border:none; padding:0; margin:0">
+                        <button class="button button-block button-positive" ng-click="saveReview()">Save</button>
+                        <button class="button button-block button-positive" ng-click="closeReview()">Close</button>
+                    </div>
+                </li>
+            </ul>
+            <div style="text-align:center; font-size:10px; margin:0; padding:0; max-height:20px; height:20px; margin-top:3px">
+                <button class="button button-clear" ng-click="openReportModal($event)" style="text-align:center; font-size:10px; text-decoration:none; color:blue; margin:0; padding:0; padding-bottom:10px; height:20px; min-height:20px; line-height:10px">
+                    Report inappropriate content or an offensive user
+                </button>
+            </div>
+
+
+        </div>
+        <div style="height:20px"></div>
+    </ion-content>
+</ion-view>
+
+
+<script id="reportModal.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-content>
+            <div class="card">
+                <div class="item item-text-wrap">
+                    Report inappropriate content or an offensive user
+                </div>
+                <div class="item item-text-wrap">
+                    <ion-scroll delegate-handle="small" id="messageArea" style="height:100px; ">
+                        <textarea class="textareas" style="height:150px; width:100%" id="reportDescription" placeholder="Descripe here in more detail why you would like to report this user" autofocus></textarea>
+                    </ion-scroll>
+                    <div class="button-bar">
+                        <button class="button button-positive" ng-click="reportUser()">Send</button>
+                        <button class="button button-positive" ng-click="closeModal()">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </ion-content>
+    </ion-modal-view>
+</script>

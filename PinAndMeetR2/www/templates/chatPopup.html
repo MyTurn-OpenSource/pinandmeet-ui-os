@@ -1,0 +1,9 @@
+<ion-scroll id="upDown" style="height: {{popHeight}}; border-top: 1px solid black">
+    <ion-list>
+        <ion-item ng-model="venueList" ng-repeat="item in pops" ng-click="quickySelected(item)" style="padding:5px 10px 0 10px; height:45px ">
+            <div style="margin-top: 7px; ">{{item.message }}</div>
+        </ion-item>
+    </ion-list>
+</ion-scroll>
+
+

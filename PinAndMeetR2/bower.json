@@ -1,0 +1,7 @@
+{
+  "name": "PinAndMeetR1",
+  "dependencies": {},
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.2.4"
+  }
+}

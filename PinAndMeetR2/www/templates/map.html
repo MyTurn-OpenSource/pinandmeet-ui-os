@@ -1,0 +1,40 @@
+﻿<style>
+    .scroll {
+        height: 100%;
+    }
+    .tab-item { color: white !IMPORTANT;}
+    .tabs-striped.tabs-positive .tab-item.activated, .tabs-striped.tabs-positive .tab-item.active, .tabs-striped.tabs-positive .tab-item.tab-item-active { border-color: #387ef5 !IMPORTANT;}
+</style>
+
+
+<ion-view view-title="Map" style="height:100%; background-color:black">
+    <ion-content class="">
+            
+        <div id="map-canvas" style="height:100%" data-tap-disabled="true">
+        </div>
+    </ion-content>
+    <div>
+        <ion-tabs id="tab-area" class="tabs-positive tabs-icon-top">
+
+            <ion-tab title="Map" icon-on="ion-map" icon-off="ion-map"></ion-tab>
+            <ion-tab title="What next?" icon-on="ion-ios-help-outline" icon-off="ion-ios-help-outline" on-select="whatNext()"></ion-tab>
+            <ion-tab id="checkInOutButton" title="{{checkInOutTitle}}" icon-on="{{checkInOutIcon}}" icon-off="{{checkInOutIcon}}" on-select="changeCheckInOutStatus()"></ion-tab>
+            <ion-tab title="Events" icon-on="ion-social-facebook-outline" icon-off="ion-social-facebook-outline" on-select="mapList()"></ion-tab>
+        </ion-tabs>
+
+    </div>
+        <!--<div class="bar bar-footer bar-positive">
+        <div class="title">
+            <button id="checkIn" class="button button-clear button-light" ng-click="whatNext()" style="color:white; height:100%">
+                What next?
+            </button>
+            <button id="checkIn" class="button button-clear button-light" ng-click="checkIn()" style="color:white; height:100%">
+                Check in
+            </button>
+            <button id="checkOut" class="button button-clear button-light" ng-click="checkOut()" style="color:white; height:100%; display:none">
+                Check out
+            </button>
+        </div>
+    </div>-->
+</ion-view>
+

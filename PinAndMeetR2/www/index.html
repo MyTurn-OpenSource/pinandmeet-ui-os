@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link href="css/ionic.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+
+    <!-- Ionic/Angularjs js -->
+    <script src="scripts/ionic.bundle.min.js"></script>
+
+    <!-- Other -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/md5.js"></script>
+    <!--<script src="scripts/PushNotifications.js"></script>
+    <script src="scripts/pushHandler.js"></script>-->
+    <script src="scripts/newPushHandler.js"></script>
+
+    <!-- Services -->
+    <script src="scripts/services/generalServices.js"></script>
+    <script src="scripts/services/userServices.js"></script>
+    <script src="scripts/services/checkInServices.js"></script>
+    <script src="scripts/services/stateServices.js"></script>
+    <script src="scripts/services/matchingServices.js"></script>
+    <script src="scripts/services/infoWindowService.js"></script>
+
+    <script src="scripts/ionic-ratings.js"></script>
+
+    <!-- Controllers-->
+    <script src="scripts/controllers/launchController.js"></script>
+    <script src="scripts/controllers/menuController.js"></script>
+    <script src="scripts/controllers/signUpController.js"></script>
+    <script src="scripts/controllers/mapController.js"></script> 
+    <script src="scripts/controllers/whatNextController.js"></script>
+    <script src="scripts/controllers/mapListController.js"></script>
+    <script src="scripts/controllers/mapListDetailsController.js"></script>
+    <script src="scripts/controllers/checkInController.js"></script>
+    <script src="scripts/controllers/matchingController.js"></script>
+    <script src="scripts/controllers/reviewController.js"></script>
+    <script src="scripts/controllers/testingController.js"></script>
+    <script src="scripts/controllers/signInController.js"></script>
+    <script src="scripts/controllers/accountCreatedController.js"></script>
+    <script src="scripts/controllers/imageUploadController.js"></script>
+    <script src="scripts/controllers/confirmImageController.js"></script>
+    <script src="scripts/controllers/modifyAccountController.js"></script>
+    <script src="scripts/controllers/myProfileController.js"></script>
+
+    <!-- oauth related -->
+    <script src="scripts/openfb.js"></script>
+
+    <!-- Google map related. COMMENT next like for a few minutes if VS2015 crashes. BUG in VS!!!! -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=geometry"></script>
+    <!--<script src="scripts/google-maps.js"></script>-->
+    
+    <!-- Cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script> <!-- Must be the last script! -->
+    <script>
+        //function addLog(txt) {
+        //    data = { value: txt, id: 'pnm', timeStamp: getTime() };
+        //    alert(JSON.stringify(data));
+        //    $.ajax({
+        //        url: "http://restlog.azurewebsites.net/api/",
+        //        type: "POST",
+        //        dataType: "json",
+        //        contentType: "application/json",
+        //        data: JSON.stringify(data),
+        //        error: function (e) {
+        //            alert(JSON.stringify(e))
+        //        }
+        //    });
+        //}
+        //function getTime() {
+        //    var currentTime = new Date();
+        //    var currentHours = currentTime.getHours();
+        //    var currentMinutes = currentTime.getMinutes();
+        //    var currentSeconds = currentTime.getSeconds();
+        //    var currentMilliSeconds = currentTime.getMilliseconds();
+
+        //    // Pad the minutes and seconds with leading zeros, if required
+        //    currentHours = (currentHours < 10 ? "0" : "") + currentHours;
+        //    currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+        //    currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
+        //    currentMilliSeconds = (currentMilliSeconds + "00").substr(0, 2);
+        //    return currentHours + ":" + currentMinutes + ":" + currentSeconds + "." + currentMilliSeconds;
+        //}
+    </script>
+
+</head>
+<body ng-app="app">
+    <ion-nav-view></ion-nav-view>
+</body>
+</html>

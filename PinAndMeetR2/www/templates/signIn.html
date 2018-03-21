@@ -1,0 +1,41 @@
+﻿<ion-view view-title="Sign in">
+    <ion-nav-bar>
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content class="background padding">
+        <ion-scroll style="">
+            <div class="card">
+                <div class="item item-text-wrap" style="">
+
+                    <form name="myForm" novalidate>
+                        <div class="list">
+                            <label class="item item-input">
+                                <span class="input-label">Email</span>
+                                <input type="email" id="signin-email" name="email" class="form-control input1" ng-required="true" ng-model="email"
+                                       placeholder="Required" ng-class="{'item-error' : myForm.email.$error.email }">
+                            </label>
+                            <label class="item item-input">
+                                <span class="input-label">Password</span>
+                                <input type="password" id="signin-password" name="password" class="form-control input1" ng-required="true" ng-model="password" ng-minlength="6"
+                                       placeholder="Required" ng-class="{'item-error' : myForm.password.$error.minlength }">
+                            </label>
+                            <div style="margin-bottom:25px">
+
+                            </div>
+                            <button type="submit" class="button button-block button-positive" ng-click="signIn()" style=""
+                                    ng-disabled="myForm.firstName.$invalid || myForm.lastName.$invalid || myForm.email.$invalid || myForm.birthday.$invalid || myForm.password.$invalid">
+                                Sign In
+                            </button>
+                            <div style="margin-bottom:0; padding-bottom:0">
+                                <button class="button button-block  button-clear button-positive" ng-click="forgotPassword()" style="font-size:12px; margin:0; padding:0">
+                                    I have forgotten my password
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </ion-scroll>
+    </ion-content>
+</ion-view>

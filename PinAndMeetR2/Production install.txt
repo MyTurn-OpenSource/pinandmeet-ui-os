@@ -1,0 +1,71 @@
+﻿
+----------------------------------------
+HOW TO INSTALL IN PRODUCTION ENVIRONMENT
+----------------------------------------
+
+!!! config.xml update build or version
+
+!!! Add statusbar plugin 
+
+!!! Remove // from StatusBar.Hide(); (2 kpl). IF statusbar plugin is missing, can't make test deploy to Android!
+
+!!! app.js
+	- Change SERVICE_URL 
+
+!!! pushHandler.js
+	- Change SERVICE_URL 
+
+!!! Save all !!!
+----------------
+
+Not so important
+
+- Sign out on all devices
+
+- signUpController.js
+	- (Default as comment)
+- signInController.js
+	- (Default as comment)
+- launch.js
+	- (clearLogThenLauch() -> launch())
+
+- PnM Service
+	- (Change GCM API Server key)
+
+- Publish PnM Service
+
+-------------
+ANDROID BUILD
+-------------
+
+- Empty first C:\Source\PinAndMeetR2\PinAndMeetR2\platforms\android\build\outputs\apk
+
+- Build in dos prompt
+	cordova build --release android
+
+- Copy
+	C:\Source\PinAndMeetR2\PinAndMeetR2\platforms\android\build\outputs\apk\android-release-unsigned.apk
+	->
+	C:\Program Files\Java\jdk1.8.0_72\bin
+
+- Remove old pinandmeet.apk
+
+- Open in command prompt ADMIN state
+
+CD "C:\Program Files\Java\jdk1.8.0_72\bin"
+
+(Do only once: keytool -genkey -v -keystore pnm-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore pnm-release-key.keystore android-release-unsigned.apk alias_name
+
+zipalign -v 4 android-release-unsigned.apk pinandmeet.apk
+
+https://play.google.com
+https://play.google.com/apps/publish/?dev_acc=16214503559597015235#ApkPlace:p=com.nsd.pinandmeet
+
+------
+SAMPLE IMAGES
+------
+
+NYC: 40.756857987657185 -73.9715801388683
+OMA: 60.639347178816976 24.88580358915923

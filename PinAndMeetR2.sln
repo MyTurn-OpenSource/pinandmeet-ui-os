@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "PinAndMeetR2", "PinAndMeetR2\PinAndMeetR2.jsproj", "{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A12514D3-FF06-4BEA-A39C-4FD7ADE49B49}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Android = Debug|Android
+		Debug|iOS = Debug|iOS
+		Debug|Windows Phone (Universal) = Debug|Windows Phone (Universal)
+		Debug|Windows Phone 8 = Debug|Windows Phone 8
+		Debug|Windows-AnyCPU = Debug|Windows-AnyCPU
+		Debug|Windows-ARM = Debug|Windows-ARM
+		Debug|Windows-x64 = Debug|Windows-x64
+		Debug|Windows-x86 = Debug|Windows-x86
+		Release|Android = Release|Android
+		Release|iOS = Release|iOS
+		Release|Windows Phone (Universal) = Release|Windows Phone (Universal)
+		Release|Windows Phone 8 = Release|Windows Phone 8
+		Release|Windows-AnyCPU = Release|Windows-AnyCPU
+		Release|Windows-ARM = Release|Windows-ARM
+		Release|Windows-x64 = Release|Windows-x64
+		Release|Windows-x86 = Release|Windows-x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Android.ActiveCfg = Debug|Android
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Android.Build.0 = Debug|Android
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Android.Deploy.0 = Debug|Android
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|iOS.ActiveCfg = Debug|iOS
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|iOS.Build.0 = Debug|iOS
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|iOS.Deploy.0 = Debug|iOS
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows Phone (Universal).ActiveCfg = Debug|Windows Phone (Universal)
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows Phone (Universal).Build.0 = Debug|Windows Phone (Universal)
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows Phone (Universal).Deploy.0 = Debug|Windows Phone (Universal)
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows Phone 8.ActiveCfg = Debug|Windows Phone 8
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows Phone 8.Build.0 = Debug|Windows Phone 8
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows Phone 8.Deploy.0 = Debug|Windows Phone 8
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows-AnyCPU.ActiveCfg = Debug|Windows-AnyCPU
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows-AnyCPU.Build.0 = Debug|Windows-AnyCPU
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows-AnyCPU.Deploy.0 = Debug|Windows-AnyCPU
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows-ARM.ActiveCfg = Debug|Windows-ARM
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows-ARM.Build.0 = Debug|Windows-ARM
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows-ARM.Deploy.0 = Debug|Windows-ARM
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows-x64.ActiveCfg = Debug|Windows-x64
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows-x64.Build.0 = Debug|Windows-x64
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows-x64.Deploy.0 = Debug|Windows-x64
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows-x86.ActiveCfg = Debug|Windows-x86
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows-x86.Build.0 = Debug|Windows-x86
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Debug|Windows-x86.Deploy.0 = Debug|Windows-x86
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Android.ActiveCfg = Release|Android
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Android.Build.0 = Release|Android
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Android.Deploy.0 = Release|Android
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|iOS.ActiveCfg = Release|iOS
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|iOS.Build.0 = Release|iOS
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|iOS.Deploy.0 = Release|iOS
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows Phone (Universal).ActiveCfg = Release|Windows Phone (Universal)
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows Phone (Universal).Build.0 = Release|Windows Phone (Universal)
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows Phone (Universal).Deploy.0 = Release|Windows Phone (Universal)
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows Phone 8.ActiveCfg = Release|Windows Phone 8
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows Phone 8.Build.0 = Release|Windows Phone 8
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows Phone 8.Deploy.0 = Release|Windows Phone 8
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows-AnyCPU.ActiveCfg = Release|Windows-AnyCPU
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows-AnyCPU.Build.0 = Release|Windows-AnyCPU
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows-AnyCPU.Deploy.0 = Release|Windows-AnyCPU
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows-ARM.ActiveCfg = Release|Windows-ARM
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows-ARM.Build.0 = Release|Windows-ARM
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows-ARM.Deploy.0 = Release|Windows-ARM
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows-x64.ActiveCfg = Release|Windows-x64
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows-x64.Build.0 = Release|Windows-x64
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows-x64.Deploy.0 = Release|Windows-x64
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows-x86.ActiveCfg = Release|Windows-x86
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows-x86.Build.0 = Release|Windows-x86
+		{69F57CB3-0141-46F4-8DD5-D3F9E161EB8E}.Release|Windows-x86.Deploy.0 = Release|Windows-x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C50E5F72-446B-4726-9AC3-5FD87E9664D8}
+	EndGlobalSection
+EndGlobal

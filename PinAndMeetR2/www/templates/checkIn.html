@@ -1,0 +1,18 @@
+﻿<ion-view view-title="Check in">
+    <ion-content class="">
+        <div id="map-canvas2" style="height:50%;" data-tap-disabled="true"></div>
+        <ion-scroll style="height: 50%; border-top: 1px solid darkgrey">
+<!--            <div style="padding: 2px 10px; color:grey; font-size:9px; width:100%; text-align:center">Venues provided by foursquare</div>-->
+            <div id="attribution" style="padding: 2px 10px; color:grey; font-size:12px; width:100%; text-align:center;display:none">Choose a venue to check in • Provided by foursquare</div>
+            <div id="noVenuesFound" style="padding: 2px 10px; color:grey; font-size:12px; width:100%; text-align:center;display:none">No venues found</div>
+            <ion-list>
+                <ion-item ng-model="venueList" ng-repeat="item in listItems" ng-click="checkIn(item)" style="padding:5px 10px 0 10px; height:45px " ng-class="{'selectedItem' : selectedListItemId == item.id}">
+                    <div style="float: left"><img src="{{item.venueImageUrl}}" /></div>
+                    <div style="float: right; margin-top: 7px; font-size:12px">{{item.distance}} m</div>
+                    <!--<div style="float: right;font-size:10px" ng-show="selectedListItemId == item.id">{{selectedListItemId}} {{item.id}}</div>-->
+                    <div style="margin-left:45px; margin-top: 7px;  width:75%; overflow:hidden; white-space: nowrap; text-overflow: ellipsis;">{{item.venueName }}</div>
+                </ion-item>
+            </ion-list>
+        </ion-scroll>
+    </ion-content>
+</ion-view>

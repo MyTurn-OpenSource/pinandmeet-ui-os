@@ -1,0 +1,87 @@
+﻿<ion-view view-title="Browse">
+    <!--<ion-header-bar class="bar bar-header bar-stable">
+        <h1 class="title">Matching</h1>
+    </ion-header-bar>-->
+    <ion-content class="background padding">
+        <ion-scroll style="height:1800px;">
+            <div class="card">
+                <!--<div class="item item-divider">
+                Find this person
+            </div>-->
+                <div class="item item-text-wrap" >
+                    <div class="list" ng-click="openPopover($event)" style="">
+                        <div class="item item-thumbnail-left">
+                            <img src="{{imageUrl}}">
+                            <h2>Find this person</h2>
+                            <p>{{name}}</p>
+                        </div>
+                    </div>
+                    <div class="button-bar">
+                        <a class="button button-block button-positive" ng-click="partnerNotFound()">Not found</a>
+                        <a class="button button-block button-positive" ng-click="partnerFound()">Review</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+
+                <!--<div class="item item-divider">
+                Send a message
+            </div>-->
+                <div class="item item-text-wrap" style="padding-bottom:5px">
+                    <ion-scroll delegate-handle="small" id="messageArea" style="height:100px; ">
+                        <ion-list>
+                            <ion-item ng-repeat="item in messages" style="border:none; padding: 4px; margin: 2px">
+                                <div ng-class="{'messageMe' : item.from == 'Me'}">{{item.message}}</div>
+                            </ion-item>
+                        </ion-list>
+                    </ion-scroll>
+                    <div class="button-bar" style="margin-bottom:10px">
+                        <button class="button button-positive" ng-click="showQuickyPopup()"><i class="icon ion-chatbubble" style="margin-right: 0px; margin-left:0"></i> Quick</button>
+                        <button class="button button-positive" ng-click="showTypePopup()"><i class="icon ion-chatbubble" style="margin-right: 0px; margin-left:0"></i> Type</button>
+                    </div>
+                    <div style="text-align:center; font-size:10px; margin:0; padding:0; max-height:20px; height:20px">
+                        <button class="button button-clear" ng-click="openReportModal($event)" style="text-align:center; font-size:10px; text-decoration:none; color:blue; margin:0; padding:0; height:20px; min-height:20px; line-height:10px">
+                            Report inappropriate content or an offensive user
+                        </button>
+                    </div>
+
+                </div>
+
+                <!--<div class="item item-divider" >
+
+                <div class="item item-input-inset" style="padding:0px; border: 0; background-color:transparent">
+                    <label class="item-input-wrapper">
+                        <input id="myMessage" type="text" placeholder="Message" style="width:100%">
+                    </label>
+                    <button class="button button-small button-positive" ng-click="enterMessage(true)">
+                        Send
+                    </button>
+                </div>
+            </div>-->
+            </div>
+       </ion-scroll>
+    </ion-content>
+</ion-view>
+
+
+<script id="reportModal.html" type="text/ng-template">
+  <ion-modal-view>
+    <ion-content>
+        <div class="card">
+            <div class="item item-text-wrap">
+                Report inappropriate content or an offensive user
+            </div>
+            <div class="item item-text-wrap">
+                <ion-scroll delegate-handle="small" id="messageArea" style="height:100px; ">
+                    <textarea class="textareas" style="height:150px; width:100%" id="reportDescription" placeholder="Descripe here in more detail why you would like to report this user" autofocus></textarea>
+                </ion-scroll>
+                <div class="button-bar">
+                    <button class="button button-positive" ng-click="reportUser()">Send</button>
+                    <button class="button button-positive" ng-click="closeModal()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+  </ion-modal-view>
+</script>

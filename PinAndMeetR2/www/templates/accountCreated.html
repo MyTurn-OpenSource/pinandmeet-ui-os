@@ -1,0 +1,53 @@
+﻿<ion-view view-title="Account created">
+    <ion-nav-bar>
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content class="background padding">
+        <div class="card">
+            <!--<div class="item item-divider ">
+                Sign in
+            </div>-->
+            <div class="item item-text-wrap " style="">
+                <div id="accountCreated" class="list" style="margin-bottom:0; display:none">
+                    <div class="item item-thumbnail-left">
+                        <img src="images/pnm-logo1.png">
+                        <h2>Account is created</h2>
+                        <p>Pin'n'Meet account is now created.</p>
+                        <p>
+                            You should receive an email shortly to verify your email address.
+                        </p>
+                        <p>
+                            In case you don't receive the verification email, please first check your Junk-email folder.
+                        </p>
+                    </div>
+                </div>
+                <div id="notVerified" class="list" style="margin-bottom:0; display:none">
+                    <div class="item item-thumbnail-left">
+                        <img src="images/pnm-logo1.png">
+                        <h2>Your email address is not verified</h2>
+                        <p>
+                            Before you can use Pin'n'Meet you need to verify your email address.
+                        </p>
+                        <p>
+                            You should have received a confirmation email.
+                        </p>
+                        <p>
+                            In case you haven't received the email, first check your Junk-email folder. If verification email is still not found,
+                            click "Resend verification email" button below or contact Pin'n'Meet using the <a data-tap-disabled="true" href="http://pinandmeet.com">contact form</a>.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="button button-block button-positive" ng-click="resendVerificationEmail()">
+                    Resend verification email
+                </button>
+                <button class="button button-block button-positive" ng-click="signIn()">
+                    Sign in
+                </button>
+
+            </div>
+        </div>
+        <div style="height:20px"></div>
+    </ion-content>
+</ion-view>

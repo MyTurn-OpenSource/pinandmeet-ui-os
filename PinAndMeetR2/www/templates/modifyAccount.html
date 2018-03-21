@@ -1,0 +1,52 @@
+﻿<ion-view view-title="My account">
+    <ion-nav-bar>
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content class="background padding" style="height:800px;">
+            <div class="card">
+                <div class="item item-text-wrap" style="">
+                    <form name="myForm" novalidate>
+                        <div class="list">
+                            <label class="item item-input">
+                                <span class="input-label">First name</span>
+                                <input type="text" id="firstName" name="firstName" ng-model="firstName" class="form-control input1" ng-required="true" placeholder="Required">
+                            </label>
+                            <label class="item item-input">
+                                <span class="input-label">Last name</span>
+                                <input type="text" id="lastName" name="lastName" ng-model="lastName" class="form-control input1" ng-required="true" placeholder="Required">
+                            </label>
+                            <label class="item item-input">
+                                <span class="input-label">Email</span>
+                                <input type="email" id="email" name="email" class="form-control input1" ng-required="true" ng-model="email"
+                                       placeholder="Required" ng-class="{'item-error' : myForm.email.$error.email }">
+                            </label>
+
+                            <label class="item item-input">
+                                <span class="input-label">Birthdate (optional)</span>
+                                <input type="date" id="birthday" class="form-control input1" placeholder="Required" ng-required="true">
+                            </label>
+
+                            <label class="item item-input">
+                                <span class="input-label">Password</span>
+                                <input type="password" id="password" name="password" class="form-control input1" ng-required="true" ng-model="password" ng-minlength="6"
+                                       ng-class="{'item-error' : myForm.password.$error.minlength }">
+                            </label>
+
+                            <div style="margin-bottom:25px">
+
+                            </div>
+                            <button type="submit" class="button button-block button-positive" ng-click="updateAccount()"
+                                    ng-disabled="myForm.firstName.$invalid || myForm.lastName.$invalid || myForm.email.$invalid || myForm.birthday.$invalid ">
+                                Save
+                            </button>
+                            <button class="button button-block button-positive" ng-click="deleteAccount()">
+                                Delete Account
+                            </button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </ion-content>
+</ion-view>

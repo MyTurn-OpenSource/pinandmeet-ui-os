@@ -1,0 +1,30 @@
+﻿<ion-view view-title="Event details">
+    <ion-nav-bar>
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content class="background padding" style="width:100%">
+        <div class="card" style="">
+            <div class="item item-divider">
+                {{mapListDetails.eventName}}
+            </div>
+            <div class="item item-avatar" style="border-radius:0; border:0">
+                <img src="{{mapListDetails.image}}" style="border-radius:0; border:0">
+                <h2>{{mapListDetails.venueName}}</h2>
+                <p>{{mapListDetails.eventStarttimeLocal}}
+                    <span ng-if="mapListDetails.street.length != 0 && mapListDetails.eventStarttimeLocal.length != 0">
+                        • 
+                    </span>
+                    {{mapListDetails.street}}
+                </p>
+            </div>
+            <div class="item item-text-wrap">
+                <div>{{mapListDetails.eventDescription}}</div>
+            </div>
+            <div class="item item-divider">
+                <a class="button button-clear button-dark" ng-click="openFacebookPage()">Open in Facebook</a>
+            </div>
+        </div>
+        <div style="height:20px"></div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,40 @@
+﻿IDEAS
+
+------------------------------------------------------------------------
+ERRORS
+------------------------------------------------------------------------
+- UCLA ikkuna ei häviä
+- Samsun ei toimi
+- Back ei toimi event ikkunoiklta
+
+------------------------------------------------------------------------
+Admin pages
+------------------------------------------------------------------------
+- DD of users
+- List events
+- List all errors
+- Reset Contacts 12h rule
+- Set event logging on/off
+
+
+------------------------------------------------------------------------
+Refactor
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+Nice to have
+------------------------------------------------------------------------
+- Jos Not found -> Push messgeen mukaan etunimi
+- Message kun uusi review tulee
+- Nyt localTimeStamp ja siitä Bias tulee servicelle vain sing up:in yhteydessä (jos pnm sign up). Pitäisi tulla joka sing in yhteydessä, jotta kesä/talviaika menee oikein
+
+------------------------------------------------------------------------
+Version 2
+------------------------------------------------------------------------
+- "" -> Map
+- Radiate
+- Add event
+- Instant event
+
+
+

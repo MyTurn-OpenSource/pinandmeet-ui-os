@@ -1,0 +1,29 @@
+﻿<ion-view view-title="Review">
+    <ion-content class="background padding">
+        <div class="card">
+            <div class="item item-divider">
+                Info CHECK IN
+            </div>
+            <div class="item item-text-wrap">
+                <div class="list">
+
+                    <div class="item item-thumbnail-left">
+                        <img src="{{imageUrl}}">
+                        <h2>{{name}}</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="item item-divider">
+                Test
+
+            </div>
+            <div class="item item-text-wrap">
+                <p><ionic-ratings ratingsobj='ratingsObject' data-tap-disabled="true"></ionic-ratings></p>
+            </div>
+            <button ng-click="closeModal()">Close</button>
+        </div>
+        <div style="height:20px"></div>
+    </ion-content>
+</ion-view>
+

@@ -1,0 +1,24 @@
+﻿<ion-view view-title="Profile picture">
+    <ion-nav-bar>
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content class="background padding">
+        <div class="card">
+            <div class="item item-text-wrap">
+                <div id="notSelected" class="list" style="display:normal">
+                    <p>A profile picture is needed so the other user can find you in a venue.</p>
+                </div>
+                <div>
+                    <button class="button button-block button-positive" ng-click="fromGallery()">
+                        Choose from your photo gallery
+                    </button>
+                    <button class="button button-block button-positive" ng-click="takePicture()">
+                        Take a new picture
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div style="height:20px"></div>
+    </ion-content>
+</ion-view>

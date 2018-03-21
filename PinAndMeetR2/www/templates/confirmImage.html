@@ -1,0 +1,22 @@
+﻿<ion-view view-title="Confirm picture">
+    <ion-content class="background padding">
+        <div class="card">
+            <div class="item item-body">
+                <div id="selected" class="list" style="width:100%;">
+                    <center>
+                        <img id="profilePicture" nm-model="profilePicture" style="max-height:200px; max-width:200px">
+                    </center>
+                </div>
+                <div>
+                    <button id="useThis" class="button button-block button-positive" ng-click="useThis()">
+                        Use this picture
+                    </button>
+                    <button id="useThis" class="button button-block button-positive" ng-click="reject()">
+                        Reject
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div style="height:20px"></div>
+    </ion-content>
+</ion-view>

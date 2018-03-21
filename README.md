@@ -20,6 +20,8 @@ This source code may refer to old plug-in versions. It's recommeded to update al
 
 Actual code in under www-folder.
 
+First. Find in files string: [Input here] and set your tokens and passwords.
+
 Good luck!
 
 Original version by Niko Wessman, NSD Finland.

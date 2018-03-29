@@ -1,6 +1,7 @@
 {
-    "name": "PinAndMeetR1",
-    "version": "1.0.0",
-    "dependencies": {
-    }
+  "name": "PinAndMeetR1",
+  "version": "1.0.0",
+  "dependencies": {
+    "cordova-android": "^5.2.2"
+  }
 }
